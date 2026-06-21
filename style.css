@@ -102,3 +102,33 @@ nav a {
 nav a:hover {
     color: #00e5ff;
 }
+
+.hero-content {
+    max-width: 850px;
+}
+
+.hero-label {
+    color: #00e5ff;
+    font-size: 14px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.hero-desc {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #cbd5e1;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.secondary-btn {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+}
