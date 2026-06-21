@@ -132,3 +132,37 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.08);
     color: white;
 }
+
+.about-section {
+    padding: 100px 20px;
+    background: #050816;
+    display: flex;
+    justify-content: center;
+}
+
+.about-card {
+    max-width: 900px;
+    padding: 40px;
+    border: 1px solid rgba(0, 229, 255, 0.25);
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(14px);
+    box-shadow: 0 0 30px rgba(0, 229, 255, 0.08);
+}
+
+.section-label {
+    color: #00e5ff;
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.about-card h2 {
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.about-card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
