@@ -264,3 +264,43 @@ nav a:hover {
     margin-top: 10px;
     color: #94a3b8;
 }
+
+.contact-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-desc {
+    max-width: 600px;
+    margin: 0 auto 35px;
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.contact-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-box a {
+    padding: 14px 28px;
+    border: 1px solid rgba(0, 229, 255, 0.4);
+    border-radius: 999px;
+    color: #00e5ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-box a:hover {
+    background: #00e5ff;
+    color: #050816;
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
+}
