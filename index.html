@@ -2,170 +2,173 @@
 <html lang="id">
 
 <head>
-    <!-- Metadata website -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gatha Portfolio</title>
-
-    <!-- File CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR SECTION -->
+    <!-- ================= NAVBAR SECTION ================= -->
     <nav class="navbar">
-    
+        <div class="nav-block"></div>
+
         <ul class="nav-menu">
             <li><a href="#home">Home</a></li>
+            <li><a href="#profil">Profile</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-    
+
         <div class="nav-search">
             <input type="text" placeholder="Search">
             <span>⌕</span>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header id="home">
+    <!-- ================= HERO SECTION ================= -->
+    <header id="home" class="hero-section">
+
+        <div class="hero-overlay"></div>
+
         <div class="hero-content">
-
-            <div class="profile-wrapper">
-                <img src="assets/gatha.jpg" alt="Foto Profil Gatha" class="profile-img">
-            </div>
-
             <p class="hero-label">PORTFOLIO WEBSITE</p>
 
-            <h1>Rexlicky Verdhika Sagatha</h1>
+            <h1 class="hero-title">
+                NEXT-GEN<br>
+                <span>DIGITAL</span><br>
+                PORTFOLIO
+            </h1>
+
+            <div class="hero-line"></div>
 
             <p class="hero-desc">
                 Fresh Graduate Informatika yang fokus pada IT Support,
-                Web Development, dan solusi digital.
+                Web Development, dan solusi digital modern.
             </p>
 
             <div class="hero-buttons">
-                <button>Lihat Project</button>
-                <button class="secondary-btn">Download CV</button>
+                <a href="#projects" class="btn-primary">Explore</a>
+                <a href="#contact" class="btn-secondary">Contact</a>
             </div>
-
         </div>
+
+        <div class="hero-info">
+            <h3>Rexlicky Verdhika Sagatha</h3>
+            <p class="hero-tags">2026 | IT SUPPORT | WEB DEVELOPER | DIGITAL SOLUTIONS</p>
+            <p>
+                Membangun website, membantu kebutuhan teknis, dan mengembangkan
+                solusi digital yang rapi, cepat, dan fungsional.
+            </p>
+        </div>
+
+        <div class="social-links">
+            <a href="#">f</a>
+            <a href="#">in</a>
+            <a href="https://github.com/Rexlicky" target="_blank">gh</a>
+        </div>
+
+        <p class="hero-year">2026©</p>
+        <div class="corner-box"></div>
     </header>
 
-    <!-- ABOUT / PROFIL SECTION -->
-    <section id="profil" class="about-section">
-        <div class="about-card">
+    <!-- ================= PROFILE SECTION ================= -->
+    <section id="profil" class="section">
+        <p class="section-label">PROFILE</p>
+        <h2>Tentang Saya</h2>
 
-            <p class="section-label">PROFIL</p>
-
-            <h2>Tentang Saya</h2>
-
+        <div class="glass-card">
             <p>
                 Saya adalah Fresh Graduate Informatika yang memiliki minat pada
                 pengembangan website, IT support, dan administrasi digital.
                 Saya terbiasa menggunakan HTML, CSS, Python, GitHub, serta memiliki
                 pengalaman PKL di lingkungan pemerintahan.
             </p>
-
         </div>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="skills-section">
-
+    <!-- ================= SKILLS SECTION ================= -->
+    <section id="skills" class="section">
         <p class="section-label">SKILLS</p>
-
         <h2>Keahlian Saya</h2>
 
-        <div class="skills-grid">
-
-            <div class="skill-card">
+        <div class="grid">
+            <div class="card">
                 <h3>Frontend</h3>
                 <p>HTML, CSS, JavaScript</p>
             </div>
 
-            <div class="skill-card">
+            <div class="card">
                 <h3>Backend</h3>
                 <p>Python, FastAPI, SQLite</p>
             </div>
 
-            <div class="skill-card">
+            <div class="card">
                 <h3>Tools</h3>
                 <p>Git, GitHub, VS Code</p>
             </div>
 
-            <div class="skill-card">
+            <div class="card">
                 <h3>Design</h3>
                 <p>Figma, UI/UX Design</p>
             </div>
-
         </div>
     </section>
 
-    <!-- CERTIFICATES SECTION -->
-    <section id="certificates" class="certificates-section">
-
+    <!-- ================= CERTIFICATES SECTION ================= -->
+    <section id="certificates" class="section">
         <p class="section-label">CERTIFICATES</p>
-
         <h2>Sertifikat Saya</h2>
 
-        <div class="certificate-grid">
-
-            <div class="certificate-card">
+        <div class="grid">
+            <div class="card">
                 <h3>Certificate Title</h3>
                 <p>Organization Name</p>
                 <span>2026</span>
             </div>
 
-            <div class="certificate-card">
+            <div class="card">
                 <h3>Certificate Title</h3>
                 <p>Organization Name</p>
                 <span>2026</span>
             </div>
 
-            <div class="certificate-card">
+            <div class="card">
                 <h3>Certificate Title</h3>
                 <p>Organization Name</p>
                 <span>2026</span>
             </div>
-
         </div>
     </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="projects-section">
-
-        <p class="section-label">PROJECTS</p>
-
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section id="projects" class="section">
+        <p class="section-label">PORTFOLIO</p>
         <h2>Project Saya</h2>
 
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>Deskripsi singkat project akan ditambahkan nanti.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Chatbot BAAK FTIK</h3>
+                <p>Chatbot kampus berbasis Hybrid Rule-Based dan NLP menggunakan Python, FastAPI, dan SQLite.</p>
             </div>
 
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>Deskripsi singkat project akan ditambahkan nanti.</p>
+            <div class="card">
+                <h3>Website Portfolio</h3>
+                <p>Website personal dengan tampilan futuristik untuk menampilkan profil, skill, dan project.</p>
             </div>
 
-            <div class="project-card">
-                <h3>Project Title</h3>
-                <p>Deskripsi singkat project akan ditambahkan nanti.</p>
+            <div class="card">
+                <h3>Website Layanan Surat</h3>
+                <p>Project layanan surat digital berbasis web untuk mendukung administrasi pemerintahan.</p>
             </div>
-
         </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="contact-section">
-
+    <!-- ================= CONTACT SECTION ================= -->
+    <section id="contact" class="section">
         <p class="section-label">CONTACT</p>
-
         <h2>Hubungi Saya</h2>
 
         <p class="contact-desc">
@@ -177,24 +180,13 @@
             <a href="https://github.com/Rexlicky" target="_blank">GitHub</a>
             <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
         </div>
-
     </section>
 
-    <!-- FOOTER SECTION -->
+    <!-- ================= FOOTER SECTION ================= -->
     <footer>
-        <div class="footer-content">
-
-            <h3>Rexlicky Verdhika Sagatha</h3>
-
-            <p>
-                Fresh Graduate Informatika • IT Support • Web Developer
-            </p>
-
-            <p class="footer-copy">
-                © 2026 Rexlicky Verdhika Sagatha. All Rights Reserved.
-            </p>
-
-        </div>
+        <h3>Rexlicky Verdhika Sagatha</h3>
+        <p>Fresh Graduate Informatika • IT Support • Web Developer</p>
+        <p class="footer-copy">© 2026 Rexlicky Verdhika Sagatha. All Rights Reserved.</p>
     </footer>
 
 </body>
