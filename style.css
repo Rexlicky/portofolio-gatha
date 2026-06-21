@@ -342,3 +342,29 @@ footer {
 
     font-size: 14px;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: -100px;
+    right: -100px;
+    width: 350px;
+    height: 350px;
+    background: rgba(0, 229, 255, 0.15);
+    filter: blur(120px);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    bottom: -120px;
+    left: -120px;
+    width: 350px;
+    height: 350px;
+    background: rgba(0, 229, 255, 0.12);
+    filter: blur(120px);
+    border-radius: 50%;
+    z-index: -1;
+}
