@@ -60,3 +60,45 @@ button:hover {
         0 0 10px #00e5ff,
         0 0 20px #00e5ff;
 }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding: 20px 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(5, 8, 22, 0.7);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(0, 229, 255, 0.2);
+    z-index: 100;
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #00e5ff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
