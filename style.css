@@ -304,3 +304,33 @@ nav a:hover {
     color: #050816;
     box-shadow: 0 0 20px rgba(0, 229, 255, 0.5);
 }
+
+footer {
+    margin-top: 50px;
+
+    border-top: 1px solid rgba(0, 229, 255, 0.15);
+
+    background: rgba(255, 255, 255, 0.02);
+
+    padding: 40px 20px;
+
+    text-align: center;
+}
+
+.footer-content h3 {
+    color: #00e5ff;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 2px;
+}
+
+.footer-content p {
+    color: #94a3b8;
+}
+
+.footer-copy {
+    margin-top: 20px;
+
+    font-size: 14px;
+}
