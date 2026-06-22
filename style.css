@@ -46,8 +46,8 @@ body {
     flex-shrink: 0;
     border-radius: 50%;
     background:
-        radial-gradient(circle at 30% 25%, #fff, transparent 22%),
-        linear-gradient(135deg, #ffffff, #7bcaff, #ff7a35);
+            radial-gradient(circle at 30% 25%, #fff, transparent 22%),
+            linear-gradient(135deg, #ffffff, #9d6fff, #6d4cff);
     box-shadow: 0 0 35px rgba(123, 202, 255, 0.65);
 }
 
@@ -113,6 +113,33 @@ body {
             transform 0.4s ease;
 }
 
+.hero-section::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+    top: 45%;
+
+    transform: translate(-50%, -50%);
+
+    width: 1100px;
+    height: 1100px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(circle,
+            rgba(165, 105, 255, 0.22),
+            rgba(120, 90, 255, 0.12),
+            transparent 70%);
+
+    filter: blur(150px);
+
+    pointer-events: none;
+    z-index: 0;
+}
+
 .hero-section.hero-hidden {
     opacity: 0.3;
     filter: blur(8px);
@@ -120,40 +147,39 @@ body {
 }
 
 /* liquid background */
-.hero-section::before {
-    content: "";
-    position: absolute;
-    width: 1200px;
-    height: 520px;
-    left: -260px;
-    top: 210px;
-    border-radius: 50%;
-    background:
-        radial-gradient(circle at 22% 50%, rgba(255, 96, 35, 0.95), transparent 18%),
-        radial-gradient(circle at 45% 45%, rgba(255, 255, 255, 0.9), transparent 10%),
-        radial-gradient(circle at 60% 48%, rgba(92, 185, 255, 0.9), transparent 18%),
-        linear-gradient(90deg, #ff6a22, #ffffff, #65c8ff, #111827);
-    filter: blur(18px);
-    opacity: 0.95;
-    transform: rotate(-16deg);
+.hero-section {
+    background: #000;
 }
 
-.hero-section::after {
-    content: "";
+.liquid-orb {
     position: absolute;
-    width: 1100px;
-    height: 420px;
-    right: -300px;
-    bottom: 80px;
-    border-radius: 50%;
-    background:
-        radial-gradient(circle at 22% 50%, rgba(255, 255, 255, 0.75), transparent 9%),
-        radial-gradient(circle at 45% 45%, rgba(255, 112, 45, 0.9), transparent 16%),
-        radial-gradient(circle at 70% 50%, rgba(88, 185, 255, 0.95), transparent 20%),
-        linear-gradient(90deg, #1a365d, #ffffff, #ff7a35, #4fc3ff);
-    filter: blur(16px);
+
+    left: 25%;
+    top: -20%;
+
+    transform: translate(-50%, -50%);
+
+    width: 700px;
+    height: auto;
+
     opacity: 0.9;
-    transform: rotate(-13deg);
+
+    z-index: 0;
+    pointer-events: none;
+
+    animation: orbFloat 7s ease-in-out infinite;
+}
+
+@keyframes orbFloat {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-18px) scale(1.03);
+    }
 }
 
 /* main glass card */
@@ -184,8 +210,8 @@ body {
     background:
         linear-gradient(120deg, rgba(255, 255, 255, 0.28), transparent 35%),
         radial-gradient(circle at 50% 32%, rgba(255, 255, 255, 0.45), transparent 18%),
-        radial-gradient(circle at 85% 72%, rgba(255, 115, 45, 0.26), transparent 20%),
-        radial-gradient(circle at 18% 80%, rgba(95, 190, 255, 0.26), transparent 22%);
+        radial-gradient(circle at 85% 72%, rgba(170, 110, 255, 0.22), transparent 20%),
+        radial-gradient(circle at 18% 80%, rgba(120, 90, 255, 0.22), transparent 22%);
     pointer-events: none;
 }
 
@@ -400,29 +426,45 @@ body {
 .section::before {
     content: "";
     position: absolute;
-    width: 900px;
-    height: 300px;
-    left: -230px;
-    top: 80px;
+
+    width: 1000px;
+    height: 500px;
+
+    left: -300px;
+    top: 50px;
+
     border-radius: 50%;
-    background: linear-gradient(90deg, #ff6a22, #ffffff, #4fc3ff);
-    filter: blur(24px);
-    opacity: 0.25;
-    transform: rotate(-16deg);
+
+    background:
+        radial-gradient(circle,
+            rgba(170, 110, 255, 0.28),
+            transparent 70%);
+
+    filter: blur(120px);
+
+    opacity: 1;
 }
 
 .section::after {
     content: "";
     position: absolute;
-    width: 760px;
-    height: 260px;
+
+    width: 900px;
+    height: 450px;
+
     right: -250px;
-    bottom: 80px;
+    bottom: 0;
+
     border-radius: 50%;
-    background: linear-gradient(90deg, #4fc3ff, #ffffff, #ff7a35);
-    filter: blur(26px);
-    opacity: 0.22;
-    transform: rotate(-16deg);
+
+    background:
+        radial-gradient(circle,
+            rgba(120, 90, 255, 0.22),
+            transparent 70%);
+
+    filter: blur(120px);
+
+    opacity: 1;
 }
 
 .section>* {
@@ -639,6 +681,14 @@ footer p {
 
     .section {
         padding: 90px 28px;
+    }
+
+    .liquid-orb {
+        right: -120px;
+        top: 260px;
+        width: 420px;
+        max-width: none;
+        opacity: 0.55;
     }
 }
 
